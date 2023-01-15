@@ -48,7 +48,7 @@ public interface DespachoMapping extends GenericMapping<DespachoDTO, Despacho> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intNoTiquete", target = "intNoTiquete")
     @Override
-    public DespachoDTO obtenerDto(Despacho entity);
+    public DespachoDTO getDto(Despacho entity);
 
     /**
      * TODO: Definición de {@code withId}.

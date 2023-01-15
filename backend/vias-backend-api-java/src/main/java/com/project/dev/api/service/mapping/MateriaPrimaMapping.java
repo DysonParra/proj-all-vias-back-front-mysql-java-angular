@@ -48,7 +48,7 @@ public interface MateriaPrimaMapping extends GenericMapping<MateriaPrimaDTO, Mat
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strCodigo", target = "strCodigo")
     @Override
-    public MateriaPrimaDTO obtenerDto(MateriaPrima entity);
+    public MateriaPrimaDTO getDto(MateriaPrima entity);
 
     /**
      * TODO: Definición de {@code withId}.

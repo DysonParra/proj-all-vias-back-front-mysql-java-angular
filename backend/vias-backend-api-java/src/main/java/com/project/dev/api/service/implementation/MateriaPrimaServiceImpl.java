@@ -60,7 +60,7 @@ public class MateriaPrimaServiceImpl implements MateriaPrimaService {
     @Override
     public List<MateriaPrimaDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo MateriaPrima");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class MateriaPrimaServiceImpl implements MateriaPrimaService {
     @Override
     public Page<MateriaPrimaDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo MateriaPrima con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class MateriaPrimaServiceImpl implements MateriaPrimaService {
         MateriaPrima entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        MateriaPrimaDTO actualEntity = entityMapping.obtenerDto(entity);
+        MateriaPrimaDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class MateriaPrimaServiceImpl implements MateriaPrimaService {
         log.debug("Solicitud para buscar la Entidad tipo MateriaPrima: {}", id);
         MateriaPrima searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class MateriaPrimaServiceImpl implements MateriaPrimaService {
     @Override
     public List<MateriaPrimaDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo MateriaPrima: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class MateriaPrimaServiceImpl implements MateriaPrimaService {
     @Override
     public Page<MateriaPrimaDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo MateriaPrima para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

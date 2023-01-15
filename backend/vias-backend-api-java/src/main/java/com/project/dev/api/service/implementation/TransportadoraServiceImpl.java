@@ -60,7 +60,7 @@ public class TransportadoraServiceImpl implements TransportadoraService {
     @Override
     public List<TransportadoraDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Transportadora");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class TransportadoraServiceImpl implements TransportadoraService {
     @Override
     public Page<TransportadoraDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Transportadora con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class TransportadoraServiceImpl implements TransportadoraService {
         Transportadora entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        TransportadoraDTO actualEntity = entityMapping.obtenerDto(entity);
+        TransportadoraDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class TransportadoraServiceImpl implements TransportadoraService {
         log.debug("Solicitud para buscar la Entidad tipo Transportadora: {}", id);
         Transportadora searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class TransportadoraServiceImpl implements TransportadoraService {
     @Override
     public List<TransportadoraDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Transportadora: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class TransportadoraServiceImpl implements TransportadoraService {
     @Override
     public Page<TransportadoraDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Transportadora para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

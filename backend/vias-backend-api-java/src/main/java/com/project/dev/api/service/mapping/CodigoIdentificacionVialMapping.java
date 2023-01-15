@@ -48,7 +48,7 @@ public interface CodigoIdentificacionVialMapping extends GenericMapping<CodigoId
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strCiv", target = "strCiv")
     @Override
-    public CodigoIdentificacionVialDTO obtenerDto(CodigoIdentificacionVial entity);
+    public CodigoIdentificacionVialDTO getDto(CodigoIdentificacionVial entity);
 
     /**
      * TODO: Definición de {@code withId}.

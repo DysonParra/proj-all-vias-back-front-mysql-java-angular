@@ -60,7 +60,7 @@ public class PlantaServiceImpl implements PlantaService {
     @Override
     public List<PlantaDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Planta");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class PlantaServiceImpl implements PlantaService {
     @Override
     public Page<PlantaDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Planta con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class PlantaServiceImpl implements PlantaService {
         Planta entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        PlantaDTO actualEntity = entityMapping.obtenerDto(entity);
+        PlantaDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class PlantaServiceImpl implements PlantaService {
         log.debug("Solicitud para buscar la Entidad tipo Planta: {}", id);
         Planta searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class PlantaServiceImpl implements PlantaService {
     @Override
     public List<PlantaDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Planta: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class PlantaServiceImpl implements PlantaService {
     @Override
     public Page<PlantaDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Planta para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

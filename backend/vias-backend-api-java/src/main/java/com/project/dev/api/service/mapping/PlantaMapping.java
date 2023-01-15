@@ -48,7 +48,7 @@ public interface PlantaMapping extends GenericMapping<PlantaDTO, Planta> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strCodigo", target = "strCodigo")
     @Override
-    public PlantaDTO obtenerDto(Planta entity);
+    public PlantaDTO getDto(Planta entity);
 
     /**
      * TODO: Definición de {@code withId}.

@@ -48,7 +48,7 @@ public interface TransportadoraMapping extends GenericMapping<TransportadoraDTO,
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strNombre", target = "strNombre")
     @Override
-    public TransportadoraDTO obtenerDto(Transportadora entity);
+    public TransportadoraDTO getDto(Transportadora entity);
 
     /**
      * TODO: Definición de {@code withId}.

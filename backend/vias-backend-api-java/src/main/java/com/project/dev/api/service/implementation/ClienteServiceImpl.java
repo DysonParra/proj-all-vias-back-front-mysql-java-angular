@@ -60,7 +60,7 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public List<ClienteDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Cliente");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public Page<ClienteDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Cliente con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class ClienteServiceImpl implements ClienteService {
         Cliente entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        ClienteDTO actualEntity = entityMapping.obtenerDto(entity);
+        ClienteDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class ClienteServiceImpl implements ClienteService {
         log.debug("Solicitud para buscar la Entidad tipo Cliente: {}", id);
         Cliente searchedEntity = entityRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public List<ClienteDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Cliente: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public Page<ClienteDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Cliente para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

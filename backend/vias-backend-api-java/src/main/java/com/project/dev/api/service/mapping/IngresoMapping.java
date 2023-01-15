@@ -48,7 +48,7 @@ public interface IngresoMapping extends GenericMapping<IngresoDTO, Ingreso> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intNoTiquete", target = "intNoTiquete")
     @Override
-    public IngresoDTO obtenerDto(Ingreso entity);
+    public IngresoDTO getDto(Ingreso entity);
 
     /**
      * TODO: Definición de {@code withId}.

@@ -48,7 +48,7 @@ public interface RegistroEliminadoMapping extends GenericMapping<RegistroElimina
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "strPlaca", target = "strPlaca")
     @Override
-    public RegistroEliminadoDTO obtenerDto(RegistroEliminado entity);
+    public RegistroEliminadoDTO getDto(RegistroEliminado entity);
 
     /**
      * TODO: Definición de {@code withId}.

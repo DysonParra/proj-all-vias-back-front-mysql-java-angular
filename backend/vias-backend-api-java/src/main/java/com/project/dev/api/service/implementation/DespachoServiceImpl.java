@@ -60,7 +60,7 @@ public class DespachoServiceImpl implements DespachoService {
     @Override
     public List<DespachoDTO> getAllEntities() throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Despacho");
-        return entityMapping.obtenerDto(entityRepository.findAll());
+        return entityMapping.getDto(entityRepository.findAll());
     }
 
     /**
@@ -73,7 +73,7 @@ public class DespachoServiceImpl implements DespachoService {
     @Override
     public Page<DespachoDTO> getAllEntitiesPaged(Pageable pageable) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Despacho con paginacion");
-        return entityRepository.findAll(pageable).map(entityMapping::obtenerDto);
+        return entityRepository.findAll(pageable).map(entityMapping::getDto);
     }
 
     /**
@@ -91,7 +91,7 @@ public class DespachoServiceImpl implements DespachoService {
         Despacho entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        DespachoDTO actualEntity = entityMapping.obtenerDto(entity);
+        DespachoDTO actualEntity = entityMapping.getDto(entity);
         return actualEntity;
     }
 
@@ -107,7 +107,7 @@ public class DespachoServiceImpl implements DespachoService {
         log.debug("Solicitud para buscar la Entidad tipo Despacho: {}", id);
         Despacho searchedEntity = entityRepository.findById(Integer.parseInt(id))
                 .orElseThrow(() -> new EntityNotFoundException(id));
-        return entityMapping.obtenerDto(searchedEntity);
+        return entityMapping.getDto(searchedEntity);
     }
 
     /**
@@ -132,7 +132,7 @@ public class DespachoServiceImpl implements DespachoService {
     @Override
     public List<DespachoDTO> searchEntities(String query) throws Exception {
         log.debug("Solicitud para listar todas las Entidades tipo Despacho: {}", query);
-        return entityMapping.obtenerDto(entityRepository.searchEntities(query));
+        return entityMapping.getDto(entityRepository.searchEntities(query));
     }
 
     /**
@@ -146,6 +146,6 @@ public class DespachoServiceImpl implements DespachoService {
     @Override
     public Page<DespachoDTO> searchEntitiesPaged(String query, Pageable pageable) {
         log.debug("Solicitud para buscar una pagina de la entidad tipo Despacho para consulta {}", query);
-        return entityRepository.searchEntities(query, pageable).map(entityMapping::obtenerDto);
+        return entityRepository.searchEntities(query, pageable).map(entityMapping::getDto);
     }
 }

@@ -48,7 +48,7 @@ public interface AyudanteMapping extends GenericMapping<AyudanteDTO, Ayudante> {
     // Deben ser el campo clave de la base de datos.
     @Mapping(source = "intCedula", target = "intCedula")
     @Override
-    public AyudanteDTO obtenerDto(Ayudante entity);
+    public AyudanteDTO getDto(Ayudante entity);
 
     /**
      * TODO: Definición de {@code withId}.
