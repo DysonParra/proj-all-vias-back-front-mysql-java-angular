@@ -272,7 +272,7 @@ public class RegistroEliminadoRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/RegistroEliminado/{query}/pages")
+    @GetMapping("/RegistroEliminado/search/{query}/pages")
     public ResponseEntity<List<RegistroEliminadoDTO>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type RegistroEliminado with the search : {}", query);
         Page<RegistroEliminadoDTO> page = null;
@@ -281,7 +281,7 @@ public class RegistroEliminadoRest {
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/RegistroEliminado/{query}/pages/" + query);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/RegistroEliminado/search/{query}/pages/" + query);
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 

@@ -272,7 +272,7 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CodigoIdentificacionVial/{query}/pages")
+    @GetMapping("/CodigoIdentificacionVial/search/{query}/pages")
     public ResponseEntity<List<CodigoIdentificacionVialDTO>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type CodigoIdentificacionVial with the search : {}", query);
         Page<CodigoIdentificacionVialDTO> page = null;
@@ -281,7 +281,7 @@ public class CodigoIdentificacionVialRest {
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CodigoIdentificacionVial/{query}/pages/" + query);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CodigoIdentificacionVial/search/{query}/pages/" + query);
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 

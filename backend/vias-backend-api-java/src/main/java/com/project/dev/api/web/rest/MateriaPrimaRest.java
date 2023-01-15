@@ -272,7 +272,7 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/MateriaPrima/{query}/pages")
+    @GetMapping("/MateriaPrima/search/{query}/pages")
     public ResponseEntity<List<MateriaPrimaDTO>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type MateriaPrima with the search : {}", query);
         Page<MateriaPrimaDTO> page = null;
@@ -281,7 +281,7 @@ public class MateriaPrimaRest {
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/MateriaPrima/{query}/pages/" + query);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/MateriaPrima/search/{query}/pages/" + query);
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 
