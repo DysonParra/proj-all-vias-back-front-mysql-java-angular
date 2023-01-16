@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.AyudanteDTO;
-import com.project.dev.api.service.AyudanteService;
+import com.project.dev.api.service.implementation.AyudanteServiceImpl;
 import com.project.dev.api.web.rest.assembler.AyudanteRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class AyudanteRest {
 
     private final Logger log = LoggerFactory.getLogger(AyudanteRest.class);
-    private final AyudanteService entityService;
+    private final AyudanteServiceImpl entityService;
     private final AyudanteRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class AyudanteRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public AyudanteRest(AyudanteService entityService,
+    public AyudanteRest(AyudanteServiceImpl entityService,
             AyudanteRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

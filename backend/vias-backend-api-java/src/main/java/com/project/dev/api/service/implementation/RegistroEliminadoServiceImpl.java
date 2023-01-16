@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.RegistroEliminado;
 import com.project.dev.api.dto.RegistroEliminadoDTO;
 import com.project.dev.api.repository.RegistroEliminadoRepository;
-import com.project.dev.api.service.RegistroEliminadoService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.RegistroEliminadoMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class RegistroEliminadoServiceImpl implements RegistroEliminadoService {
+public class RegistroEliminadoServiceImpl implements GenericService<RegistroEliminadoDTO> {
 
     private final Logger log = LoggerFactory.getLogger(RegistroEliminadoServiceImpl.class);
     private final RegistroEliminadoRepository entityRepository;

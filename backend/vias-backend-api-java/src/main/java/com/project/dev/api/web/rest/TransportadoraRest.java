@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.TransportadoraDTO;
-import com.project.dev.api.service.TransportadoraService;
+import com.project.dev.api.service.implementation.TransportadoraServiceImpl;
 import com.project.dev.api.web.rest.assembler.TransportadoraRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class TransportadoraRest {
 
     private final Logger log = LoggerFactory.getLogger(TransportadoraRest.class);
-    private final TransportadoraService entityService;
+    private final TransportadoraServiceImpl entityService;
     private final TransportadoraRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class TransportadoraRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public TransportadoraRest(TransportadoraService entityService,
+    public TransportadoraRest(TransportadoraServiceImpl entityService,
             TransportadoraRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

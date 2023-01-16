@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.CodigoIdentificacionVial;
 import com.project.dev.api.dto.CodigoIdentificacionVialDTO;
 import com.project.dev.api.repository.CodigoIdentificacionVialRepository;
-import com.project.dev.api.service.CodigoIdentificacionVialService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.CodigoIdentificacionVialMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class CodigoIdentificacionVialServiceImpl implements CodigoIdentificacionVialService {
+public class CodigoIdentificacionVialServiceImpl implements GenericService<CodigoIdentificacionVialDTO> {
 
     private final Logger log = LoggerFactory.getLogger(CodigoIdentificacionVialServiceImpl.class);
     private final CodigoIdentificacionVialRepository entityRepository;

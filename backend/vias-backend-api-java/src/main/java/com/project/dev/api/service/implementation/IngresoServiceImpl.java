@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Ingreso;
 import com.project.dev.api.dto.IngresoDTO;
 import com.project.dev.api.repository.IngresoRepository;
-import com.project.dev.api.service.IngresoService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.IngresoMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class IngresoServiceImpl implements IngresoService {
+public class IngresoServiceImpl implements GenericService<IngresoDTO> {
 
     private final Logger log = LoggerFactory.getLogger(IngresoServiceImpl.class);
     private final IngresoRepository entityRepository;

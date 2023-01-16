@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.CodigoIdentificacionVialDTO;
-import com.project.dev.api.service.CodigoIdentificacionVialService;
+import com.project.dev.api.service.implementation.CodigoIdentificacionVialServiceImpl;
 import com.project.dev.api.web.rest.assembler.CodigoIdentificacionVialRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class CodigoIdentificacionVialRest {
 
     private final Logger log = LoggerFactory.getLogger(CodigoIdentificacionVialRest.class);
-    private final CodigoIdentificacionVialService entityService;
+    private final CodigoIdentificacionVialServiceImpl entityService;
     private final CodigoIdentificacionVialRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class CodigoIdentificacionVialRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public CodigoIdentificacionVialRest(CodigoIdentificacionVialService entityService,
+    public CodigoIdentificacionVialRest(CodigoIdentificacionVialServiceImpl entityService,
             CodigoIdentificacionVialRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.IngresoDTO;
-import com.project.dev.api.service.IngresoService;
+import com.project.dev.api.service.implementation.IngresoServiceImpl;
 import com.project.dev.api.web.rest.assembler.IngresoRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class IngresoRest {
 
     private final Logger log = LoggerFactory.getLogger(IngresoRest.class);
-    private final IngresoService entityService;
+    private final IngresoServiceImpl entityService;
     private final IngresoRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class IngresoRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public IngresoRest(IngresoService entityService,
+    public IngresoRest(IngresoServiceImpl entityService,
             IngresoRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

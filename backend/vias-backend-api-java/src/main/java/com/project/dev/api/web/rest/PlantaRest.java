@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.PlantaDTO;
-import com.project.dev.api.service.PlantaService;
+import com.project.dev.api.service.implementation.PlantaServiceImpl;
 import com.project.dev.api.web.rest.assembler.PlantaRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class PlantaRest {
 
     private final Logger log = LoggerFactory.getLogger(PlantaRest.class);
-    private final PlantaService entityService;
+    private final PlantaServiceImpl entityService;
     private final PlantaRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class PlantaRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public PlantaRest(PlantaService entityService,
+    public PlantaRest(PlantaServiceImpl entityService,
             PlantaRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;

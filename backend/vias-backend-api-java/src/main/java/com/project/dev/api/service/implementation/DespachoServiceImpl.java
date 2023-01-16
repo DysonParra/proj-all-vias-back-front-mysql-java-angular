@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Despacho;
 import com.project.dev.api.dto.DespachoDTO;
 import com.project.dev.api.repository.DespachoRepository;
-import com.project.dev.api.service.DespachoService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.DespachoMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class DespachoServiceImpl implements DespachoService {
+public class DespachoServiceImpl implements GenericService<DespachoDTO> {
 
     private final Logger log = LoggerFactory.getLogger(DespachoServiceImpl.class);
     private final DespachoRepository entityRepository;

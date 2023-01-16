@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Transportadora;
 import com.project.dev.api.dto.TransportadoraDTO;
 import com.project.dev.api.repository.TransportadoraRepository;
-import com.project.dev.api.service.TransportadoraService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.TransportadoraMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class TransportadoraServiceImpl implements TransportadoraService {
+public class TransportadoraServiceImpl implements GenericService<TransportadoraDTO> {
 
     private final Logger log = LoggerFactory.getLogger(TransportadoraServiceImpl.class);
     private final TransportadoraRepository entityRepository;

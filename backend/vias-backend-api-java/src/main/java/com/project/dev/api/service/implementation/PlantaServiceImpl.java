@@ -17,7 +17,7 @@ package com.project.dev.api.service.implementation;
 import com.project.dev.api.domain.Planta;
 import com.project.dev.api.dto.PlantaDTO;
 import com.project.dev.api.repository.PlantaRepository;
-import com.project.dev.api.service.PlantaService;
+import com.project.dev.api.service.GenericService;
 import com.project.dev.api.service.exception.EntityNotFoundException;
 import com.project.dev.api.service.mapping.PlantaMapping;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @org.springframework.stereotype.Service
-public class PlantaServiceImpl implements PlantaService {
+public class PlantaServiceImpl implements GenericService<PlantaDTO> {
 
     private final Logger log = LoggerFactory.getLogger(PlantaServiceImpl.class);
     private final PlantaRepository entityRepository;

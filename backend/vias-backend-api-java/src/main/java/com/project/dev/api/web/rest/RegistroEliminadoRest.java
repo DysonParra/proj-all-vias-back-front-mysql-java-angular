@@ -15,7 +15,7 @@
 package com.project.dev.api.web.rest;
 
 import com.project.dev.api.dto.RegistroEliminadoDTO;
-import com.project.dev.api.service.RegistroEliminadoService;
+import com.project.dev.api.service.implementation.RegistroEliminadoServiceImpl;
 import com.project.dev.api.web.rest.assembler.RegistroEliminadoRestAssembler;
 import com.project.dev.api.web.rest.util.PaginationUtil;
 import io.swagger.annotations.Api;
@@ -61,7 +61,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class RegistroEliminadoRest {
 
     private final Logger log = LoggerFactory.getLogger(RegistroEliminadoRest.class);
-    private final RegistroEliminadoService entityService;
+    private final RegistroEliminadoServiceImpl entityService;
     private final RegistroEliminadoRestAssembler entityRestAssembler;
 
     /**
@@ -70,7 +70,7 @@ public class RegistroEliminadoRest {
      * @param entityService       servicio de la entidad.
      * @param entityRestAssembler ensamblador de recurso de la entidad.
      */
-    public RegistroEliminadoRest(RegistroEliminadoService entityService,
+    public RegistroEliminadoRest(RegistroEliminadoServiceImpl entityService,
             RegistroEliminadoRestAssembler entityRestAssembler) {
         this.entityService = entityService;
         this.entityRestAssembler = entityRestAssembler;
