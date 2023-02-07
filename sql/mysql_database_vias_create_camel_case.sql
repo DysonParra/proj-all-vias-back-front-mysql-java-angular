@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS vias;
-CREATE DATABASE IF NOT EXISTS vias;
-USE vias;
+DROP DATABASE IF EXISTS `vias`;
+CREATE DATABASE IF NOT EXISTS `vias`;
+USE `vias`;
 
 CREATE TABLE IF NOT EXISTS `Configuracion` (
     `codigo`                            VARCHAR(100)        NOT NULL,
@@ -261,7 +261,7 @@ CREATE TABLE IF NOT EXISTS `Despacho` (
     `cedula`                            INT                     NULL DEFAULT NULL,
     `producto`                          VARCHAR(100)            NULL DEFAULT NULL,
     `planta`                            VARCHAR(100)            NULL DEFAULT NULL,
-    `cliente`                           VARCHAR(100)            NULL DEFAULT NULL,
+    `cliente`                           VARCHAR(50)             NULL DEFAULT NULL,
     `destino`                           VARCHAR(100)            NULL DEFAULT NULL,
     `transportadora`                    VARCHAR(100)            NULL DEFAULT NULL,
     `fechaEntrada`                      VARCHAR(20)             NULL DEFAULT NULL,
@@ -288,7 +288,7 @@ CREATE TABLE IF NOT EXISTS `Despacho` (
     `codigo`                            VARCHAR(50)             NULL DEFAULT NULL,
     `tipoVehiculo`                      VARCHAR(100)            NULL DEFAULT NULL,
     `tipoProducto`                      VARCHAR(100)            NULL DEFAULT NULL,
-    `idProducto`                        VARCHAR(50)             NULL DEFAULT NULL,
+    `idProducto`                        VARCHAR(100)            NULL DEFAULT NULL,
     `direccion`                         VARCHAR(100)            NULL DEFAULT NULL,
     `entregadoPor`                      VARCHAR(100)            NULL DEFAULT NULL,
     `recibidoPor`                       VARCHAR(100)            NULL DEFAULT NULL,
