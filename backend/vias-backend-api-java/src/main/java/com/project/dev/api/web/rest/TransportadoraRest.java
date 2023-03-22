@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {TransportadoraRest}
  *
  * @version         2.0
  *

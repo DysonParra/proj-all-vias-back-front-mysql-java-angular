@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {TransportadoraRepository}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DespachoRepository} se encarga de realizar tareas específicas.
+ * @fileoverview    {DespachoRepository}
  *
  * @version         2.0
  *

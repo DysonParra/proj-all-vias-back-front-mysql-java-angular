@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngresoMapping}
  *
  * @version         2.0
  *

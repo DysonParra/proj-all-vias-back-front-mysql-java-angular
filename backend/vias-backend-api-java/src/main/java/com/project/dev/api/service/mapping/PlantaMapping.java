@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {PlantaMapping}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {PlantaRestAssembler}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {PlantaServiceImpl}
  *
  * @version         2.0
  *

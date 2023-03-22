@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {TransportadoraMapping}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoIdentificacionVialMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {CodigoIdentificacionVialMapping}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngresoServiceImpl}
  *
  * @version         2.0
  *

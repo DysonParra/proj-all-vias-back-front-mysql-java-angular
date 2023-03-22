@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngresoRestAssembler}
  *
  * @version         2.0
  *

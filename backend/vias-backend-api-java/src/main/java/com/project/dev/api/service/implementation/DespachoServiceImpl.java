@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DespachoServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {DespachoServiceImpl}
  *
  * @version         2.0
  *

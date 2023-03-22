@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEliminadoDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {RegistroEliminadoDTO}
  *
  * @version         2.0
  *

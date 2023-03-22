@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DespachoMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {DespachoMapping}
  *
  * @version         2.0
  *

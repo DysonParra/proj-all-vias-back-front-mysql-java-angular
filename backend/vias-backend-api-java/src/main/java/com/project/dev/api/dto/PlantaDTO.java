@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {PlantaDTO}
  *
  * @version         2.0
  *

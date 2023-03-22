@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEliminadoRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {RegistroEliminadoRestAssembler}
  *
  * @version         2.0
  *

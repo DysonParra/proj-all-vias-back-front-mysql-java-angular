@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {IngresoRest}
  *
  * @version         2.0
  *

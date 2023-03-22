@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {ClienteMapping} se encarga de realizar tareas específicas.
+ * @fileoverview    {ClienteMapping}
  *
  * @version         2.0
  *

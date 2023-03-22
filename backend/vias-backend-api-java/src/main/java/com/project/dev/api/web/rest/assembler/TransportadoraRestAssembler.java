@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraRestAssembler} se encarga de realizar tareas específicas.
+ * @fileoverview    {TransportadoraRestAssembler}
  *
  * @version         2.0
  *

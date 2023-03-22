@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MateriaPrimaRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {MateriaPrimaRest}
  *
  * @version         2.0
  *

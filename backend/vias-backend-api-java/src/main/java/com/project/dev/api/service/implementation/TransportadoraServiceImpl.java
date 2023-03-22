@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraServiceImpl} se encarga de realizar tareas específicas.
+ * @fileoverview    {TransportadoraServiceImpl}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoIdentificacionVialRest} se encarga de realizar tareas específicas.
+ * @fileoverview    {CodigoIdentificacionVialRest}
  *
  * @version         2.0
  *

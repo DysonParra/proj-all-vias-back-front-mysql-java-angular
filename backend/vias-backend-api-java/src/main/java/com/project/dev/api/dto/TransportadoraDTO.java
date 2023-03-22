@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraDTO} se encarga de realizar tareas específicas.
+ * @fileoverview    {TransportadoraDTO}
  *
  * @version         2.0
  *
