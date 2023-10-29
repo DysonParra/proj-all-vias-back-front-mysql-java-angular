@@ -23,7 +23,7 @@ import org.mapstruct.Mapping;
  * TODO: Definición de {@code DespachoMapping}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 @Mapper(componentModel = "spring") //, unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface DespachoMapping extends GenericMapping<DespachoDTO, Despacho> {
