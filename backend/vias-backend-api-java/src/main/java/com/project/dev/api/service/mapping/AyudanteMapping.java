@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code AyudanteMapping}.
+ * TODO: Description of {@code AyudanteMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface AyudanteMapping extends GenericMapping<AyudanteDTO, Ayudante> {
     public AyudanteDTO getDto(Ayudante entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

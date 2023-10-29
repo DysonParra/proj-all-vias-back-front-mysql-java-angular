@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code TransportadoraMapping}.
+ * TODO: Description of {@code TransportadoraMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface TransportadoraMapping extends GenericMapping<TransportadoraDTO,
     public TransportadoraDTO getDto(Transportadora entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

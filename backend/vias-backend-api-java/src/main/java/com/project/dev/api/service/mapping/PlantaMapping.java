@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code PlantaMapping}.
+ * TODO: Description of {@code PlantaMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface PlantaMapping extends GenericMapping<PlantaDTO, Planta> {
     public PlantaDTO getDto(Planta entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

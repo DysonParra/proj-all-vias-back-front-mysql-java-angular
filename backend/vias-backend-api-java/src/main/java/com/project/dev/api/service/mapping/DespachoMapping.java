@@ -20,7 +20,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 /**
- * TODO: Definición de {@code DespachoMapping}.
+ * TODO: Description of {@code DespachoMapping}.
  *
  * @author Dyson Parra
  * @since 11
@@ -51,7 +51,7 @@ public interface DespachoMapping extends GenericMapping<DespachoDTO, Despacho> {
     public DespachoDTO getDto(Despacho entity);
 
     /**
-     * TODO: Definición de {@code withId}.
+     * TODO: Description of {@code withId}.
      *
      * @param strId
      * @return

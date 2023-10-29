@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code CodigoIdentificacionVialDTO}.
+ * TODO: Description of {@code CodigoIdentificacionVialDTO}.
  *
  * @author Dyson Parra
  * @since 11

@@ -50,7 +50,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 /**
- * TODO: Definición de {@code DespachoRest}.
+ * TODO: Description of {@code DespachoRest}.
  *
  * @author Dyson Parra
  * @since 11

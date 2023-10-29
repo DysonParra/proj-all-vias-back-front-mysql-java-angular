@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code MateriaPrimaDTO}.
+ * TODO: Description of {@code MateriaPrimaDTO}.
  *
  * @author Dyson Parra
  * @since 11

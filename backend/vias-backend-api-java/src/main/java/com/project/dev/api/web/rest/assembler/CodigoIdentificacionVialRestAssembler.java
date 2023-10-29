@@ -22,7 +22,7 @@ import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 /**
- * TODO: Definición de {@code CodigoIdentificacionVialRestAssembler}.
+ * TODO: Description of {@code CodigoIdentificacionVialRestAssembler}.
  *
  * @author Dyson Parra
  * @since 11

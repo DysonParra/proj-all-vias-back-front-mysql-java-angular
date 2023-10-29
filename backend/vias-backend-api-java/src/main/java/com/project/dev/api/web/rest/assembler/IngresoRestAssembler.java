@@ -22,7 +22,7 @@ import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 /**
- * TODO: Definición de {@code IngresoRestAssembler}.
+ * TODO: Description of {@code IngresoRestAssembler}.
  *
  * @author Dyson Parra
  * @since 11

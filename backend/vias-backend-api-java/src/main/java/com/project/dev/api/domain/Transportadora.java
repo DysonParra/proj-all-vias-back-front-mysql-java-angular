@@ -24,7 +24,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Definición de {@code Transportadora}.
+ * TODO: Description of {@code Transportadora}.
  *
  * @author Dyson Parra
  * @since 11
