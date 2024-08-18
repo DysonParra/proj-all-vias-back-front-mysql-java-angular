@@ -91,8 +91,8 @@ public class AyudanteServiceImpl implements GenericService<AyudanteDTO> {
         Ayudante entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        AyudanteDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        AyudanteDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

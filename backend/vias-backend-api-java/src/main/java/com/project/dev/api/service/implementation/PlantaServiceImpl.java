@@ -91,8 +91,8 @@ public class PlantaServiceImpl implements GenericService<PlantaDTO> {
         Planta entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        PlantaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        PlantaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

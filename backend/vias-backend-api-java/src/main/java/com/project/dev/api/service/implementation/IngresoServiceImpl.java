@@ -91,8 +91,8 @@ public class IngresoServiceImpl implements GenericService<IngresoDTO> {
         Ingreso entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        IngresoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        IngresoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

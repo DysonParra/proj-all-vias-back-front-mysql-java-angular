@@ -91,8 +91,8 @@ public class DespachoServiceImpl implements GenericService<DespachoDTO> {
         Despacho entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        DespachoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        DespachoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

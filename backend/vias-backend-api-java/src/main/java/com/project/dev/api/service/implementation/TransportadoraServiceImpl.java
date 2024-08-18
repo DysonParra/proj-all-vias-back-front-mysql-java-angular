@@ -91,8 +91,8 @@ public class TransportadoraServiceImpl implements GenericService<TransportadoraD
         Transportadora entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        TransportadoraDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        TransportadoraDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

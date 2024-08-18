@@ -91,8 +91,8 @@ public class MateriaPrimaServiceImpl implements GenericService<MateriaPrimaDTO> 
         MateriaPrima entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        MateriaPrimaDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        MateriaPrimaDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

@@ -91,8 +91,8 @@ public class RegistroEliminadoServiceImpl implements GenericService<RegistroElim
         RegistroEliminado entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        RegistroEliminadoDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        RegistroEliminadoDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**

@@ -91,8 +91,8 @@ public class CodigoIdentificacionVialServiceImpl implements GenericService<Codig
         CodigoIdentificacionVial entity = entityMapping.getEntity(entityDTO);
         entity = entityRepository.save(entity);
 
-        CodigoIdentificacionVialDTO actualEntity = entityMapping.getDto(entity);
-        return actualEntity;
+        CodigoIdentificacionVialDTO currrentEntity = entityMapping.getDto(entity);
+        return currrentEntity;
     }
 
     /**
