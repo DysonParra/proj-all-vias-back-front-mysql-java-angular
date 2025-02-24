@@ -23,7 +23,7 @@ import org.mapstruct.Mapping;
  * TODO: Description of {@code MateriaPrimaMapping}.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 @Mapper(componentModel = "spring") //, unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface MateriaPrimaMapping extends GenericMapping<MateriaPrimaDTO, MateriaPrima> {

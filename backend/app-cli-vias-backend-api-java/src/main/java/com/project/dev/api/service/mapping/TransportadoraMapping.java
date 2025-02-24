@@ -23,7 +23,7 @@ import org.mapstruct.Mapping;
  * TODO: Description of {@code TransportadoraMapping}.
  *
  * @author Dyson Parra
- * @since 11
+ * @since Java 17 (LTS), Gradle 7.3
  */
 @Mapper(componentModel = "spring") //, unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface TransportadoraMapping extends GenericMapping<TransportadoraDTO, Transportadora> {
