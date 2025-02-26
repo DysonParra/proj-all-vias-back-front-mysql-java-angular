@@ -49,7 +49,7 @@ public interface IngresoMapping extends GenericMapping<IngresoDTO, Ingreso> {
     public IngresoDTO getDto(Ingreso entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

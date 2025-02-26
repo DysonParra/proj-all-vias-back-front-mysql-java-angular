@@ -49,7 +49,7 @@ public interface CodigoIdentificacionVialMapping extends GenericMapping<CodigoId
     public CodigoIdentificacionVialDTO getDto(CodigoIdentificacionVial entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

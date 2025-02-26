@@ -49,7 +49,7 @@ public interface PlantaMapping extends GenericMapping<PlantaDTO, Planta> {
     public PlantaDTO getDto(Planta entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

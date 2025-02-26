@@ -49,7 +49,7 @@ public interface TransportadoraMapping extends GenericMapping<TransportadoraDTO,
     public TransportadoraDTO getDto(Transportadora entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

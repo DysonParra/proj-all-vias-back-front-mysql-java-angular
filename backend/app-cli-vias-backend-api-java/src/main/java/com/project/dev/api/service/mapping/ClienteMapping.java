@@ -49,7 +49,7 @@ public interface ClienteMapping extends GenericMapping<ClienteDTO, Cliente> {
     public ClienteDTO getDto(Cliente entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

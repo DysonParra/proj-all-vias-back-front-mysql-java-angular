@@ -49,7 +49,7 @@ public interface AyudanteMapping extends GenericMapping<AyudanteDTO, Ayudante> {
     public AyudanteDTO getDto(Ayudante entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return

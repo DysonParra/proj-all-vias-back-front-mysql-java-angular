@@ -49,7 +49,7 @@ public interface RegistroEliminadoMapping extends GenericMapping<RegistroElimina
     public RegistroEliminadoDTO getDto(RegistroEliminado entity);
 
     /**
-     * TODO: Description of {@code withId}.
+     * TODO: Description of method {@code withId}.
      *
      * @param strId
      * @return
