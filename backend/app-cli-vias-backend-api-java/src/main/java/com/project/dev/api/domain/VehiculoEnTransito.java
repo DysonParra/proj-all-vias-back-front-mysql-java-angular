@@ -76,15 +76,10 @@ public class VehiculoEnTransito implements Serializable {
     private String strTipoProducto;
     private String strUnidad;
     private String strVolumen;
-    @JoinColumn(name = "strCiv", referencedColumnName = "strCiv")
     private String strCiv;
-    @JoinColumn(name = "strIdProducto", referencedColumnName = "strCodigo")
     private String strIdProducto;
-    @JoinColumn(name = "strIdVehiculo", referencedColumnName = "strCodigo")
     private String strIdVehiculo;
-    @JoinColumn(name = "strPlanta", referencedColumnName = "strCodigo")
     private String strPlanta;
-    @JoinColumn(name = "strTransportadora", referencedColumnName = "strNombre")
     private String strTransportadora;
 
 }

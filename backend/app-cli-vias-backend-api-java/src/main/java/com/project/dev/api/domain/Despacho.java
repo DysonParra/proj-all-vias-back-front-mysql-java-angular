@@ -74,17 +74,11 @@ public class Despacho implements Serializable {
     private String strRecibidoPor;
     private String strUnidad;
     private String strVolumen;
-    @JoinColumn(name = "strCiv", referencedColumnName = "strCiv")
     private String strCiv;
-    @JoinColumn(name = "strIdProducto", referencedColumnName = "strCodigo")
     private String strIdProducto;
-    @JoinColumn(name = "strDestino", referencedColumnName = "strCodigo")
     private String strDestino;
-    @JoinColumn(name = "strCliente", referencedColumnName = "strNit")
     private String strCliente;
-    @JoinColumn(name = "strPlanta", referencedColumnName = "strCodigo")
     private String strPlanta;
-    @JoinColumn(name = "strTransportadora", referencedColumnName = "strNombre")
     private String strTransportadora;
 
 }

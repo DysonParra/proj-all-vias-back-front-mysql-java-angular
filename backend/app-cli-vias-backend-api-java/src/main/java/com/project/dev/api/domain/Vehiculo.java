@@ -49,7 +49,6 @@ public class Vehiculo implements Serializable {
     private String strInterno;
     private String strPatronado;
     private String strObservacion;
-    @JoinColumn(name = "strIdTransportador", referencedColumnName = "strNombre")
     private String strIdTransportador;
 
 }

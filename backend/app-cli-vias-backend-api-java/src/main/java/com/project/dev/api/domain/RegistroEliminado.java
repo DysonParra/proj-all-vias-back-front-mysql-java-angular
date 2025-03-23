@@ -67,9 +67,7 @@ public class RegistroEliminado implements Serializable {
     private String strOperario;
     private String strNickOperario;
     private String strObservaciones;
-    @JoinColumn(name = "strTransportadora", referencedColumnName = "strCodigo")
     private String strTransportadora;
-    @JoinColumn(name = "strPlanta", referencedColumnName = "strNombre")
     private String strPlanta;
 
 }

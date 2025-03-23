@@ -74,13 +74,9 @@ public class Ingreso implements Serializable {
     private String strRecibidoPor;
     private String strUnidad;
     private String strVolumen;
-    @JoinColumn(name = "strMateriaPrima", referencedColumnName = "strCodigo")
     private String strMateriaPrima;
-    @JoinColumn(name = "strPlanta", referencedColumnName = "strCodigo")
     private String strPlanta;
-    @JoinColumn(name = "strTransportadora", referencedColumnName = "strNombre")
     private String strTransportadora;
-    @JoinColumn(name = "strOrigen", referencedColumnName = "strCodigo")
     private String strOrigen;
 
 }
