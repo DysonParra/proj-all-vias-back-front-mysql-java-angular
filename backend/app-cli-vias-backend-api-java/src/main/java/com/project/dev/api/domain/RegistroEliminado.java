@@ -39,55 +39,33 @@ public class RegistroEliminado implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strPlaca;
-    @Column(length = 100)
     private String strCaso;
-    @Column(length = 100)
     private String strConductor;
     private Integer intCedula;
-    @Column(length = 100)
     private String strMateriaPrimaProducto;
-    @Column(length = 100)
     private String strClienteProveedor;
-    @Column(length = 100)
     private String strOrigenDestino;
-    @Column(length = 20)
     private String strFechaEntrada;
-    @Column(length = 20)
     private String strHoraEntrada;
-    @Column(length = 20)
     private String strFechaPesoVacio;
-    @Column(length = 20)
     private String strHoraPesoVacio;
-    @Column(length = 20)
     private String strFechaDespachoPlanta;
-    @Column(length = 20)
     private String strHoraDespachoPlanta;
-    @Column(length = 20)
     private String strFechaPesoLleno;
-    @Column(length = 20)
     private String strHoraPesoLleno;
-    @Column(length = 20)
     private String strFechaSalida;
-    @Column(length = 20)
     private String strHoraSalida;
     private Integer intBruto;
     private Integer intTara;
     private Integer intNeto;
-    @Column(length = 100)
     private String strNoShipment;
-    @Column(length = 100)
     private String strNoSello;
-    @Column(length = 100)
     private String strNoR;
-    @Column(length = 100)
     private String strNoContenedor;
-    @Column(length = 100)
     private String strOperario;
-    @Column(length = 100)
     private String strNickOperario;
-    @Column(length = 250)
     private String strObservaciones;
     @JoinColumn(name = "strTransportadora", referencedColumnName = "strCodigo")
     private String strTransportadora;

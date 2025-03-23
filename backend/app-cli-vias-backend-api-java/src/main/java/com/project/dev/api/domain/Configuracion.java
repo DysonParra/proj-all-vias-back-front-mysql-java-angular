@@ -39,11 +39,9 @@ public class Configuracion implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strCodigo;
-    @Column(length = 100)
     private String strParametro;
-    @Column(length = 100)
     private String strValor;
 
 }

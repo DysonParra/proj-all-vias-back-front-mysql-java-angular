@@ -39,15 +39,11 @@ public class CodigoIdentificacionVial implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strCiv;
-    @Column(length = 100)
     private String strNombreEjeVia;
-    @Column(length = 100)
     private String strNombreExtremoInicial;
-    @Column(length = 100)
     private String strNombreExtremoFinal;
-    @Column(length = 100)
     private String strTipoMalla;
 
 }

@@ -39,23 +39,15 @@ public class Vehiculo implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strCodigo;
-    @Column(length = 50)
     private String strPlacaVehiculo;
-    @Column(length = 50)
     private String strNumeroInterno;
-    @Column(length = 50)
     private String strTara;
-    @Column(length = 50)
     private String strEjes;
-    @Column(length = 50)
     private String strVolumenVehiculo;
-    @Column(length = 50)
     private String strInterno;
-    @Column(length = 50)
     private String strPatronado;
-    @Column(length = 200)
     private String strObservacion;
     @JoinColumn(name = "strIdTransportador", referencedColumnName = "strNombre")
     private String strIdTransportador;

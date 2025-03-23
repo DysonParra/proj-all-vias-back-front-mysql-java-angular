@@ -39,13 +39,10 @@ public class MateriaPrima implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false)
     private String strCodigo;
-    @Column(length = 100)
     private String strNombre;
-    @Column(length = 250)
     private String strDetalles;
-    @Column(length = 100)
     private String strTipo;
 
 }

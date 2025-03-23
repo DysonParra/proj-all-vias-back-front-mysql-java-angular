@@ -41,9 +41,7 @@ public class Ayudante implements Serializable {
     @Basic(optional = false)
     @Column(nullable = false)
     private Integer intCedula;
-    @Column(length = 100)
     private String strNombre;
-    @Column(length = 100)
     private String strEstado;
 
 }

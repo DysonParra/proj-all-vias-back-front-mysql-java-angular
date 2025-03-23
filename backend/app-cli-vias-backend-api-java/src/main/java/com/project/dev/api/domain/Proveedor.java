@@ -39,17 +39,12 @@ public class Proveedor implements Serializable {
 
     @Id
     @Basic(optional = false)
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false)
     private String strNit;
-    @Column(length = 100)
     private String strNombre;
-    @Column(length = 100)
     private String strDireccion;
-    @Column(length = 100)
     private String strTelefono;
-    @Column(length = 100)
     private String strFax;
-    @Column(length = 250)
     private String strObservaciones;
 
 }
