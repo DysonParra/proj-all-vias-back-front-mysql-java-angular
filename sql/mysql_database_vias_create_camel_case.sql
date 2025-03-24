@@ -2,21 +2,21 @@ DROP DATABASE IF EXISTS `vias`;
 CREATE DATABASE IF NOT EXISTS `vias`;
 USE `vias`;
 
-CREATE TABLE IF NOT EXISTS `Configuracion` (
+CREATE TABLE IF NOT EXISTS `configuracion` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `parametro`                         VARCHAR(100)            NULL DEFAULT NULL,
     `valor`                             VARCHAR(100)            NULL DEFAULT NULL,
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Conductor` (
+CREATE TABLE IF NOT EXISTS `conductor` (
     `cedula`                            INT                 NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `estado`                            VARCHAR(100)            NULL DEFAULT NULL,
     PRIMARY KEY (`cedula` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `CodigoIdentificacionVial` (
+CREATE TABLE IF NOT EXISTS `codigo_identificacion_vial` (
     `civ`                               VARCHAR(50)         NOT NULL,
     `nombreEjeVia`                      VARCHAR(100)            NULL DEFAULT NULL,
     `nombreExtremoInicial`              VARCHAR(100)            NULL DEFAULT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `CodigoIdentificacionVial` (
     PRIMARY KEY (`civ` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Cliente` (
+CREATE TABLE IF NOT EXISTS `cliente` (
     `nit`                               VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `direccion`                         VARCHAR(100)            NULL DEFAULT NULL,
@@ -35,14 +35,14 @@ CREATE TABLE IF NOT EXISTS `Cliente` (
     PRIMARY KEY (`nit` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Ayudante` (
+CREATE TABLE IF NOT EXISTS `ayudante` (
     `cedula`                            INT                 NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `estado`                            VARCHAR(100)            NULL DEFAULT NULL,
     PRIMARY KEY (`cedula` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `MateriaPrima` (
+CREATE TABLE IF NOT EXISTS `materia_prima` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `detalles`                          VARCHAR(250)            NULL DEFAULT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `MateriaPrima` (
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Indicador` (
+CREATE TABLE IF NOT EXISTS `indicador` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `tamanoTrama`                       VARCHAR(10)             NULL DEFAULT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `Indicador` (
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Usuario` (
+CREATE TABLE IF NOT EXISTS `usuario` (
     `cedula`                            INT                 NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `apellido`                          VARCHAR(100)            NULL DEFAULT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
     PRIMARY KEY (`cedula` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Transportadora` (
+CREATE TABLE IF NOT EXISTS `transportadora` (
     `nombre`                            VARCHAR(100)        NOT NULL,
     `nit`                               VARCHAR(50)             NULL DEFAULT NULL,
     `direccion`                         VARCHAR(100)            NULL DEFAULT NULL,
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `Transportadora` (
     PRIMARY KEY (`nombre` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Proveedor` (
+CREATE TABLE IF NOT EXISTS `proveedor` (
     `nit`                               VARCHAR(50)         NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `direccion`                         VARCHAR(100)            NULL DEFAULT NULL,
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `Proveedor` (
     PRIMARY KEY (`nit` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Producto` (
+CREATE TABLE IF NOT EXISTS `producto` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `detalles`                          VARCHAR(100)            NULL DEFAULT NULL,
@@ -99,28 +99,28 @@ CREATE TABLE IF NOT EXISTS `Producto` (
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Planta` (
+CREATE TABLE IF NOT EXISTS `planta` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `detalles`                          VARCHAR(250)            NULL DEFAULT NULL,
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Origen` (
+CREATE TABLE IF NOT EXISTS `origen` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `detalles`                          VARCHAR(250)            NULL DEFAULT NULL,
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Destino` (
+CREATE TABLE IF NOT EXISTS `destino` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `nombre`                            VARCHAR(100)            NULL DEFAULT NULL,
     `detalles`                          VARCHAR(250)            NULL DEFAULT NULL,
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Vehiculo` (
+CREATE TABLE IF NOT EXISTS `vehiculo` (
     `codigo`                            VARCHAR(100)        NOT NULL,
     `placaVehiculo`                     VARCHAR(50)             NULL DEFAULT NULL,
     `numeroInterno`                     VARCHAR(50)             NULL DEFAULT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `Vehiculo` (
     PRIMARY KEY (`codigo` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `VehiculoEnTransito` (
+CREATE TABLE IF NOT EXISTS `vehiculo_en_transito` (
     `placa`                             VARCHAR(100)        NOT NULL,
     `caso`                              VARCHAR(100)            NULL DEFAULT NULL,
     `conductor`                         VARCHAR(100)            NULL DEFAULT NULL,
@@ -179,7 +179,7 @@ CREATE TABLE IF NOT EXISTS `VehiculoEnTransito` (
     PRIMARY KEY (`placa` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `RegistroEliminado` (
+CREATE TABLE IF NOT EXISTS `registro_eliminado` (
     `placa`                             VARCHAR(100)        NOT NULL,
     `caso`                              VARCHAR(100)            NULL DEFAULT NULL,
     `conductor`                         VARCHAR(100)            NULL DEFAULT NULL,
@@ -212,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `RegistroEliminado` (
     PRIMARY KEY (`placa` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Ingreso` (
+CREATE TABLE IF NOT EXISTS `ingreso` (
     `noTiquete`                         INT                 NOT NULL,
     `placa`                             VARCHAR(10)             NULL DEFAULT NULL,
     `conductor`                         VARCHAR(100)            NULL DEFAULT NULL,
@@ -254,7 +254,7 @@ CREATE TABLE IF NOT EXISTS `Ingreso` (
     PRIMARY KEY (`noTiquete` ASC)
 );
 
-CREATE TABLE IF NOT EXISTS `Despacho` (
+CREATE TABLE IF NOT EXISTS `despacho` (
     `noTiquete`                         INT                 NOT NULL,
     `placa`                             VARCHAR(10)             NULL DEFAULT NULL,
     `conductor`                         VARCHAR(100)            NULL DEFAULT NULL,
