@@ -38,7 +38,11 @@ public class IngresoDTO {
     private String strPlaca;
     private String strConductor;
     private Integer intCedula;
+    private String strMateriaPrima;
+    private String strPlanta;
     private String strProveedor;
+    private String strOrigen;
+    private String strTransportadora;
     private String strFechaEntrada;
     private String strHoraEntrada;
     private String strFechaPesoVacio;
@@ -68,9 +72,5 @@ public class IngresoDTO {
     private String strRecibidoPor;
     private String strUnidad;
     private String strVolumen;
-    private String strMateriaPrima;
-    private String strPlanta;
-    private String strTransportadora;
-    private String strOrigen;
 
 }

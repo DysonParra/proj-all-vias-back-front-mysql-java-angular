@@ -46,8 +46,10 @@ public class RegistroEliminado implements Serializable {
     private String strConductor;
     private Integer intCedula;
     private String strMateriaPrimaProducto;
+    private String strPlanta;
     private String strClienteProveedor;
     private String strOrigenDestino;
+    private String strTransportadora;
     private String strFechaEntrada;
     private String strHoraEntrada;
     private String strFechaPesoVacio;
@@ -68,7 +70,5 @@ public class RegistroEliminado implements Serializable {
     private String strOperario;
     private String strNickOperario;
     private String strObservaciones;
-    private String strTransportadora;
-    private String strPlanta;
 
 }

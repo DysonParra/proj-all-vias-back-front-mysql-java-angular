@@ -39,8 +39,10 @@ public class VehiculoEnTransitoDTO {
     private String strConductor;
     private Integer intCedula;
     private String strMateriaPrimaProducto;
+    private String strPlanta;
     private String strClienteProveedor;
     private String strOrigenDestino;
+    private String strTransportadora;
     private String strFechaEntrada;
     private String strHoraEntrada;
     private String strFechaPesoVacio;
@@ -67,13 +69,11 @@ public class VehiculoEnTransitoDTO {
     private String strEntregadoPor;
     private String strRecibidoPor;
     private String strDireccion;
+    private String strCiv;
+    private String strIdVehiculo;
     private String strTipoProducto;
+    private String strIdProducto;
     private String strUnidad;
     private String strVolumen;
-    private String strCiv;
-    private String strIdProducto;
-    private String strIdVehiculo;
-    private String strPlanta;
-    private String strTransportadora;
 
 }

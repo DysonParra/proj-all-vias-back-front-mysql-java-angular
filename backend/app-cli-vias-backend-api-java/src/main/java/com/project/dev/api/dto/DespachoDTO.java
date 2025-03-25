@@ -39,6 +39,10 @@ public class DespachoDTO {
     private String strConductor;
     private Integer intCedula;
     private String strProducto;
+    private String strPlanta;
+    private String strCliente;
+    private String strDestino;
+    private String strTransportadora;
     private String strFechaEntrada;
     private String strHoraEntrada;
     private String strFechaPesoVacio;
@@ -63,16 +67,12 @@ public class DespachoDTO {
     private String strCodigo;
     private String strTipoVehiculo;
     private String strTipoProducto;
+    private String strIdProducto;
     private String strDireccion;
     private String strEntregadoPor;
     private String strRecibidoPor;
+    private String strCiv;
     private String strUnidad;
     private String strVolumen;
-    private String strCiv;
-    private String strIdProducto;
-    private String strDestino;
-    private String strCliente;
-    private String strPlanta;
-    private String strTransportadora;
 
 }

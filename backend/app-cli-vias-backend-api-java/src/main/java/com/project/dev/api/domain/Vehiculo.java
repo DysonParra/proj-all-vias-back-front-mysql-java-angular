@@ -44,12 +44,12 @@ public class Vehiculo implements Serializable {
     private String strCodigo;
     private String strPlacaVehiculo;
     private String strNumeroInterno;
+    private String strIdTransportador;
     private String strTara;
     private String strEjes;
     private String strVolumenVehiculo;
     private String strInterno;
     private String strPatronado;
     private String strObservacion;
-    private String strIdTransportador;
 
 }
