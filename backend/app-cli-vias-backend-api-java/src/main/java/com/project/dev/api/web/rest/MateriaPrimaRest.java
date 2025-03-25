@@ -88,7 +88,7 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/MateriaPrima")
+    @GetMapping("/materia-prima")
     public CollectionModel<EntityModel<MateriaPrimaDTO>> getAllEntities() {
         log.debug("REST request to get all entities type MateriaPrima");
         List<EntityModel<MateriaPrimaDTO>> entities = null;
@@ -118,14 +118,14 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/MateriaPrima/pages")
+    @GetMapping("/materia-prima/pages")
     public ResponseEntity<CollectionModel<EntityModel<MateriaPrimaDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type MateriaPrima");
         Page<MateriaPrimaDTO> page = null;
         List<EntityModel<MateriaPrimaDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/MateriaPrima/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/materia-prima/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/MateriaPrima")
+    @PostMapping("/materia-prima")
     public ResponseEntity<?> saveEntity(@RequestBody MateriaPrimaDTO entityDTO) {
         log.debug("POST request to save a new entity type MateriaPrima");
         EntityModel<MateriaPrimaDTO> resource = null;
@@ -180,7 +180,7 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/MateriaPrima/{id}")
+    @PutMapping("/materia-prima/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody MateriaPrimaDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/MateriaPrima/{id}")
+    @GetMapping("/materia-prima/{id}")
     public ResponseEntity<EntityModel<MateriaPrimaDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type MateriaPrima with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/MateriaPrima/{id}")
+    @DeleteMapping("/materia-prima/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity MateriaPrima with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/MateriaPrima/search/{query}")
+    @GetMapping("/materia-prima/search/{query}")
     public CollectionModel<EntityModel<MateriaPrimaDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type MateriaPrima with the search : {} ", query);
         List<EntityModel<MateriaPrimaDTO>> entities = null;
@@ -279,14 +279,14 @@ public class MateriaPrimaRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/MateriaPrima/search/{query}/pages")
+    @GetMapping("/materia-prima/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<MateriaPrimaDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type MateriaPrima with the search : {}", query);
         Page<MateriaPrimaDTO> page = null;
         List<EntityModel<MateriaPrimaDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/MateriaPrima/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/materia-prima/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());

@@ -88,7 +88,7 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CodigoIdentificacionVial")
+    @GetMapping("/codigo-identificacion-vial")
     public CollectionModel<EntityModel<CodigoIdentificacionVialDTO>> getAllEntities() {
         log.debug("REST request to get all entities type CodigoIdentificacionVial");
         List<EntityModel<CodigoIdentificacionVialDTO>> entities = null;
@@ -118,14 +118,14 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CodigoIdentificacionVial/pages")
+    @GetMapping("/codigo-identificacion-vial/pages")
     public ResponseEntity<CollectionModel<EntityModel<CodigoIdentificacionVialDTO>>> getAllEntitiesPaged(Pageable pageable) {
         log.debug("REST request to get a page of all entities type CodigoIdentificacionVial");
         Page<CodigoIdentificacionVialDTO> page = null;
         List<EntityModel<CodigoIdentificacionVialDTO>> entities = null;
         try {
             page = entityService.getAllEntitiesPaged(pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CodigoIdentificacionVial/pages");
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/codigo-identificacion-vial/pages");
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
@@ -151,7 +151,7 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PostMapping("/CodigoIdentificacionVial")
+    @PostMapping("/codigo-identificacion-vial")
     public ResponseEntity<?> saveEntity(@RequestBody CodigoIdentificacionVialDTO entityDTO) {
         log.debug("POST request to save a new entity type CodigoIdentificacionVial");
         EntityModel<CodigoIdentificacionVialDTO> resource = null;
@@ -180,7 +180,7 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @PutMapping("/CodigoIdentificacionVial/{id}")
+    @PutMapping("/codigo-identificacion-vial/{id}")
     public ResponseEntity<?> updateEntity(@RequestBody CodigoIdentificacionVialDTO entityDTO, @PathVariable String id) {
         return saveEntity(entityDTO);
     }
@@ -198,7 +198,7 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CodigoIdentificacionVial/{id}")
+    @GetMapping("/codigo-identificacion-vial/{id}")
     public ResponseEntity<EntityModel<CodigoIdentificacionVialDTO>> getEntity(@PathVariable String id) {
         log.debug(String.format("REST request to get the entity type CodigoIdentificacionVial with id {} ", id));
         try {
@@ -224,7 +224,7 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @DeleteMapping("/CodigoIdentificacionVial/{id}")
+    @DeleteMapping("/codigo-identificacion-vial/{id}")
     public ResponseEntity<?> deleteEntity(@PathVariable String id) {
         log.debug("DELETE request to delete the entity CodigoIdentificacionVial with id : {}", id);
         try {
@@ -248,7 +248,7 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CodigoIdentificacionVial/search/{query}")
+    @GetMapping("/codigo-identificacion-vial/search/{query}")
     public CollectionModel<EntityModel<CodigoIdentificacionVialDTO>> searchEntities(@PathVariable String query) {
         log.debug("REST request to get the entities type CodigoIdentificacionVial with the search : {} ", query);
         List<EntityModel<CodigoIdentificacionVialDTO>> entities = null;
@@ -279,14 +279,14 @@ public class CodigoIdentificacionVialRest {
         @ApiResponse(code = 403, message = "Prohibido acceder al recurso que intenta alcanzar"),
         @ApiResponse(code = 404, message = "No se encuentra el recurso que intentabas alcanzar")
     })
-    @GetMapping("/CodigoIdentificacionVial/search/{query}/pages")
+    @GetMapping("/codigo-identificacion-vial/search/{query}/pages")
     public ResponseEntity<CollectionModel<EntityModel<CodigoIdentificacionVialDTO>>> searchEntitiesPaged(@PathVariable String query, Pageable pageable) {
         log.debug("REST request to get a page of the entities type CodigoIdentificacionVial with the search : {}", query);
         Page<CodigoIdentificacionVialDTO> page = null;
         List<EntityModel<CodigoIdentificacionVialDTO>> entities = null;
         try {
             page = entityService.searchEntitiesPaged(query, pageable);
-            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/CodigoIdentificacionVial/search/{query}/pages/" + query);
+            HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/codigo-identificacion-vial/search/{query}/pages/" + query);
             entities = page.getContent().parallelStream()
                     .map(entityRestAssembler::toModel)
                     .collect(Collectors.toList());
