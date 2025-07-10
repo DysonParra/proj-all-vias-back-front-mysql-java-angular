@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraDTO}
+ * @overview        {TransportadoraDTO}
  *
  * @version         2.0
  *

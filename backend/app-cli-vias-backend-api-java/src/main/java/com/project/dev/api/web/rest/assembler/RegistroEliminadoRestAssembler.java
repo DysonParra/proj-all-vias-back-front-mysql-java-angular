@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEliminadoRestAssembler}
+ * @overview        {RegistroEliminadoRestAssembler}
  *
  * @version         2.0
  *

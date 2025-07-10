@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoViewModel}
+ * @overview        {IngresoViewModel}
  *
  * @version         2.0
  *

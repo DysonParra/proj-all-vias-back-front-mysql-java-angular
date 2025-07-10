@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaViewModel}
+ * @overview        {PlantaViewModel}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoIdentificacionVialRepository}
+ * @overview        {CodigoIdentificacionVialRepository}
  *
  * @version         2.0
  *

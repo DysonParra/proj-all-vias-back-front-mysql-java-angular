@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaRestAssembler}
+ * @overview        {PlantaRestAssembler}
  *
  * @version         2.0
  *

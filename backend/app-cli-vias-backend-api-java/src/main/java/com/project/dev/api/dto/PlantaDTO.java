@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaDTO}
+ * @overview        {PlantaDTO}
  *
  * @version         2.0
  *

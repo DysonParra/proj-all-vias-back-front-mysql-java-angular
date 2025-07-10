@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEliminadoViewModel}
+ * @overview        {RegistroEliminadoViewModel}
  *
  * @version         2.0
  *

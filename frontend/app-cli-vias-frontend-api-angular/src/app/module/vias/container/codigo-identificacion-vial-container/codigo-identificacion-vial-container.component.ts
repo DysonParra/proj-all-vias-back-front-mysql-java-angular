@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoIdentificacionVialContainerComponent}
+ * @overview        {CodigoIdentificacionVialContainerComponent}
  *
  * @version         2.0
  *

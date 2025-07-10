@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoState}
+ * @overview        {IngresoState}
  *
  * @version         2.0
  *

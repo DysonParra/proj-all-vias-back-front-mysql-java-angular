@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoIdentificacionVialRestAssembler}
+ * @overview        {CodigoIdentificacionVialRestAssembler}
  *
  * @version         2.0
  *

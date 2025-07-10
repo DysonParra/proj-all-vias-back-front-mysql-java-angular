@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {AyudanteComponent}
+ * @overview        {AyudanteComponent}
  *
  * @version         2.0
  *

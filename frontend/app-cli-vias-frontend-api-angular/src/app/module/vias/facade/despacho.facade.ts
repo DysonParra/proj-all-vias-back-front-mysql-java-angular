@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DespachoFacade}
+ * @overview        {DespachoFacade}
  *
  * @version         2.0
  *

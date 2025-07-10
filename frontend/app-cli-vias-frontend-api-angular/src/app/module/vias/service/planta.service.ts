@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaService}
+ * @overview        {PlantaService}
  *
  * @version         2.0
  *

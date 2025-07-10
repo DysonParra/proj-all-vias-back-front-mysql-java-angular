@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEliminadoComponent}
+ * @overview        {RegistroEliminadoComponent}
  *
  * @version         2.0
  *

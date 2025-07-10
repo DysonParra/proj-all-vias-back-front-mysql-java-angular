@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaFacade}
+ * @overview        {PlantaFacade}
  *
  * @version         2.0
  *

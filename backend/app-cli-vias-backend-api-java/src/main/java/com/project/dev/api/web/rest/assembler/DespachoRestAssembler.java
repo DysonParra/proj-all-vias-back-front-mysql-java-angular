@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {DespachoRestAssembler}
+ * @overview        {DespachoRestAssembler}
  *
  * @version         2.0
  *

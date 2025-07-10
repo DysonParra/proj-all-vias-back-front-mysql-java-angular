@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraRestAssembler}
+ * @overview        {TransportadoraRestAssembler}
  *
  * @version         2.0
  *

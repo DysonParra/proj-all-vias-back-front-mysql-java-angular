@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaState}
+ * @overview        {PlantaState}
  *
  * @version         2.0
  *

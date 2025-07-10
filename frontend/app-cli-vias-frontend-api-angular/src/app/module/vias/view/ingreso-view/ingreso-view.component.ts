@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoViewComponent}
+ * @overview        {IngresoViewComponent}
  *
  * @version         2.0
  *

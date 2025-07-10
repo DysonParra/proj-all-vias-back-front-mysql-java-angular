@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEliminadoDTO}
+ * @overview        {RegistroEliminadoDTO}
  *
  * @version         2.0
  *

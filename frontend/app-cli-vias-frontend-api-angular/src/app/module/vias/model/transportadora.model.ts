@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraViewModel}
+ * @overview        {TransportadoraViewModel}
  *
  * @version         2.0
  *

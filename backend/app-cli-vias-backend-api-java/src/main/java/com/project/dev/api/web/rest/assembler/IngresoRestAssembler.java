@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {IngresoRestAssembler}
+ * @overview        {IngresoRestAssembler}
  *
  * @version         2.0
  *

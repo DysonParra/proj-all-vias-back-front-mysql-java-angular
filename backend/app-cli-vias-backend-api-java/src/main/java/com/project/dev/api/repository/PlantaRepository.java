@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaRepository}
+ * @overview        {PlantaRepository}
  *
  * @version         2.0
  *

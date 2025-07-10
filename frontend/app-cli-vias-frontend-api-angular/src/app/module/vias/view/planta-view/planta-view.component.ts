@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {PlantaViewComponent}
+ * @overview        {PlantaViewComponent}
  *
  * @version         2.0
  *

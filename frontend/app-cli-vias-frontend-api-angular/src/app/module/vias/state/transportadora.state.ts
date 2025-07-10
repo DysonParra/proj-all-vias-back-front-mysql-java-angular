@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraState}
+ * @overview        {TransportadoraState}
  *
  * @version         2.0
  *

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {HeaderComponent}
+ * @overview        {HeaderComponent}
  *
  * @version         2.0
  *
@@ -44,75 +44,93 @@ export class HeaderComponent implements OnInit {
                 name: 'Ayudante',
                 route: 'ayudante',
                 items: []
-            },            {
+            },
+            {
                 name: 'Cliente',
                 route: 'cliente',
                 items: []
-            },            {
+            },
+            {
                 name: 'CodigoIdentificacionVial',
                 route: 'codigo-identificacion-vial',
                 items: []
-            },            {
+            },
+            {
                 name: 'Conductor',
                 route: 'conductor',
                 items: []
-            },            {
+            },
+            {
                 name: 'Configuracion',
                 route: 'configuracion',
                 items: []
-            },            {
+            },
+            {
                 name: 'Despacho',
                 route: 'despacho',
                 items: []
-            },            {
+            },
+            {
                 name: 'Destino',
                 route: 'destino',
                 items: []
-            },            {
+            },
+            {
                 name: 'Indicador',
                 route: 'indicador',
                 items: []
-            },            {
+            },
+            {
                 name: 'Ingreso',
                 route: 'ingreso',
                 items: []
-            },            {
+            },
+            {
                 name: 'MateriaPrima',
                 route: 'materia-prima',
                 items: []
-            },            {
+            },
+            {
                 name: 'Origen',
                 route: 'origen',
                 items: []
-            },            {
+            },
+            {
                 name: 'Planta',
                 route: 'planta',
                 items: []
-            },            {
+            },
+            {
                 name: 'Producto',
                 route: 'producto',
                 items: []
-            },            {
+            },
+            {
                 name: 'Proveedor',
                 route: 'proveedor',
                 items: []
-            },            {
+            },
+            {
                 name: 'RegistroEliminado',
                 route: 'registro-eliminado',
                 items: []
-            },            {
+            },
+            {
                 name: 'Transportadora',
                 route: 'transportadora',
                 items: []
-            },            {
+            },
+            {
                 name: 'Usuario',
                 route: 'usuario',
                 items: []
-            },            {
+            },
+            {
                 name: 'Vehiculo',
                 route: 'vehiculo',
                 items: []
-            },            {
+            },
+            {
                 name: 'VehiculoEnTransito',
                 route: 'vehiculo-en-transito',
                 items: []

@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TransportadoraViewComponent}
+ * @overview        {TransportadoraViewComponent}
  *
  * @version         2.0
  *

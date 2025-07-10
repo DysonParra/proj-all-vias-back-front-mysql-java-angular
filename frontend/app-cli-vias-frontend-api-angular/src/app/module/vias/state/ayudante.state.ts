@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {AyudanteState}
+ * @overview        {AyudanteState}
  *
  * @version         2.0
  *

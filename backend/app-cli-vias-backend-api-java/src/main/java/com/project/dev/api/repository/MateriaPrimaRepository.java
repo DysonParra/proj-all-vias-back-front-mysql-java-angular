@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MateriaPrimaRepository}
+ * @overview        {MateriaPrimaRepository}
  *
  * @version         2.0
  *

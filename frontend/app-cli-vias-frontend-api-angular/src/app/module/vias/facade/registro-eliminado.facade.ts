@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {RegistroEliminadoFacade}
+ * @overview        {RegistroEliminadoFacade}
  *
  * @version         2.0
  *

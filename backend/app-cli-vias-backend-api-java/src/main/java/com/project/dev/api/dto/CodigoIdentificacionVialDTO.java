@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {CodigoIdentificacionVialDTO}
+ * @overview        {CodigoIdentificacionVialDTO}
  *
  * @version         2.0
  *

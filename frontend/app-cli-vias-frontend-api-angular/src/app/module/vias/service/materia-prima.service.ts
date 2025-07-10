@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {MateriaPrimaService}
+ * @overview        {MateriaPrimaService}
  *
  * @version         2.0
  *
